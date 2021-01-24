@@ -29,6 +29,8 @@ function renderAvatar(data) {
   var name = data.nickname || data.username;
   var avatar = data.user_pic;
   $('#welcome').html(`欢迎&nbsp;&nbsp;${name}`);
+  $('#name').html(name);
+
   if(avatar !== null) {
     $('.layui-nav-img').attr('src', avatar).show();
     $('.text-avatar').hide();
